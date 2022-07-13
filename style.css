@@ -8,6 +8,8 @@ body{
   margin: 0px;
   padding: 0px;
   font: popins;
+  height: 100vh;
+  /* background-color: ; */
 }
 
 .main{
@@ -33,18 +35,23 @@ nav{
   width: 70px;
   border: 1px solid black;
   border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 5px;
 }
-
+/* 
 .menu{
-  list-style: none;
-  /* align-items: center; */
+  /* list-style: none; */
+  /* align-items: center; 
   
-}
+} */
 
+ul{
+  list-style: none;
+}
 .menu a{
   height: 60px;
   line-height: 3px;
-  margin: 10px;
+  margin: 2px;
   padding: 5px;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -99,7 +106,10 @@ a{
 .main-text p{
   color: gray;
 }
-
+.main ul{
+  padding-right: 10px;
+  font-weight: 900;
+}
 .resume-btn{
   width: 190px;
   height: 44px;
@@ -127,15 +137,60 @@ a{
 #expant-btn{
   display: none;
 }
-@media only screen and (max-width: 600px) {
+
+aside{
+  
+  background-color: aquamarine;
+  margin:0 ;
+  /* padding: 10px ; */
+  height: 700px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.contact-main{
+  border: 2px solid black;
+  margin: 10%;
+  padding: 5%;
+  display: grid;
+
+}
+/* .social-media{
+  
+} */
+footer{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 800px) {
   .menu{
     font-size: medium;
   }
   .search-bar{
     display: none;
   }
-  #expant-btn{
-    display: block;
+  footer .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    color: black;
   }
   
   
